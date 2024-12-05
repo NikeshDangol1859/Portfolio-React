@@ -219,11 +219,12 @@ body{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   
   .main-home .myimages .images{
     width: 400px;
-    height: 400px;  
+    height: 400px; 
   }
   .main-home .myimages .images img{
     width: 100%;
@@ -233,11 +234,24 @@ body{
     border-radius: 50%;
     transition: transform 0.3s ease;
     box-shadow: 0 0 40px #ff9900;
+    animation: slideUp 2s ease-out forwards;
+
   }
   .main-home .myimages .images img:hover{
     transform: scale(1.2);
     box-shadow: 0 0 45px #ff9900;
   
+  }
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
   /* Resume */
@@ -504,6 +518,35 @@ body{
     background-color: #ff9900; 
     transition: width 0.3s ease-in-out; 
   }
+  .findme{
+    color: #ff9900;
+  }
+  .animation-findme {
+    position: relative;
+    display: inline-block;
+    color: #ff9900;
+  }
+  @keyframes changefind {
+    0% {
+      content: "Instagram.";
+    }
+    25% {
+      content: "Facebook.";
+    }
+    50% {
+      content: "LinkedIn.";
+    }
+    75% {
+      content: "Github.";
+    }    
+    100% {
+      content: "Instagram."; 
+    }
+  }
+  .animation-findme::after {
+    content: "Coding"; 
+    animation: changefind 6s infinite; 
+  }
   
   
   
@@ -537,12 +580,15 @@ body{
       width: 80%;
       margin-bottom: 50px;
       order: -1;
+      padding: 10px;
     }
   
     .main-home .myimages .images {
       width: 250px;
       height: 250px;
-    }
+    } 
+   
+
   
     .container-home .main-home .mytexts h1 {
       font-size: 36px;
