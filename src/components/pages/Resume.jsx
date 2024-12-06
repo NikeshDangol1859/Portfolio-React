@@ -97,7 +97,7 @@ function Resume() {
                         <div className="col grow"><img className="img-fluid" src="php.png" title="PHP" /></div>
                         <div className="col grow"><img className="img-fluid" src="html.png" title="HTML" /></div>
                         <div className="col grow"><img className="img-fluid" src="css.png" title="CSS" /></div>
-                        <div className="col grow"><img className="img-fluid" src="bootstrap.png" title="Bootstrap" /></div>
+                        <div className="col grow"><img className="img-fluid" src="react.png" title="React" /></div>
                     </div>
                     <div className="row mb-4  ">
                         <div className="col grow"><img className="img-fluid" src="c.png" title="C" /></div>

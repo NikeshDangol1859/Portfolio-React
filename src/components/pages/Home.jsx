@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <>
+    <>    
             <div className="container-home">
         <div className="main-home">
             <div className="mytexts">
@@ -17,7 +17,7 @@ function Home() {
             </div>
             <div className="btn">
                 <button type="button" className="btn btn-outline-warning">
-                <a href="CV(Nikesh).pdf" download className="text-decoration-none">Download CV</a>
+                <a href="CV(Nikesh).pdf" download className="text-decoration-none"><i class="fa-solid fa-download"></i> Download CV</a>
                 </button>
             </div>
             </div>
