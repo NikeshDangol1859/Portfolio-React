@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Love+Light&family=Neonderthaw&family=Noto+Sans+Devanagari:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+.gallary {
+    margin-top: 20px;
+}
+
+.gallary-main {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(95, 94, 94, 0.437);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.gallary-image,
+.gallary-details {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.gallary-image img {
+    width: 100%;
+    height: auto;
+}
+
+.gallaryproject {
+    scroll-margin-top: 90px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #FFC107;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 {
+    color: #adb2b2;
+    text-align: center;
+}
+
+.gallary-description {
+    color: #adb2b2;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+}
+
+.para {
+    color: #FFC107;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.languagesUsed {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 20px;
+}
+
+.frontend,
+.backend {
+    width: 50%;
+    color: #adb2b2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+.front-heading,
+.back-heading {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+ul li {
+    display: block;
+    font-size: 20px;
+    text-decoration: dotted;
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+}
+
+.link a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFAC00;
+    padding: 10px;
+    border-radius: 10px;
+}
+.margins{
+    margin-top: 50px;
+    height: 100px;
+}
+.uparrow a{
+    position: fixed; /* Adjust based on your layout */
+  bottom: 20px; /* Adjust position */
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  .uparrow a::before {
+    content: "⮝";
+    font-size: 18px;
+    color: white;
+    animation: bounce 1s infinite;
+  }
+
+/* Responsive gallary */
+@media (max-width: 768px) {
+    .gallary-main {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .gallary-image,
+    .gallary-details {
+        width: 100%; 
+    }
+    .gallary-description{
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    .para {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* .languagesUsed {
+        flex-direction: column; 
+    } */
+
+    .frontend,
+    .backend {
+        width: 100%; 
+        text-align: center; 
+    }
+    ul li{
+        text-align: center;
+    }
+
+    .link {
+        text-align: center; 
+    }
+
+    .link a {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+    .frontend,
+    .backend {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .link {
+        text-align: center; 
+    }
+
+    .link a {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

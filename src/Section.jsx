@@ -5,6 +5,7 @@ import Resume from './components/pages/Resume'
 import Projects from './components/pages/Projects'
 import Contact from './components/pages/Contact'
 import About from './components/pages/About'
+import Projectgallary from './components/pages/Projectgallary'
 
 function Section() {
   return (
@@ -14,6 +15,7 @@ function Section() {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projectgallary" element={<Projectgallary />} />
         <Route path="/contact" element={<Contact />} />
     </Routes>
       
